@@ -1,6 +1,6 @@
 # sotm-eu-2025
 
-State of the Map Europe 2025 website
+Web code for the [State of the Map Europe 2025 website](https://osm-uk.github.io/sotm-eu-2025/) hosted on GitHub Pages
 
 ## Previous editions
 
