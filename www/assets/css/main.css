@@ -865,6 +865,24 @@ section,
   margin-bottom: 0;
 }
 
+.subsection-title {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.subsection-title h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.subsection-title p {
+  margin-bottom: 0;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
