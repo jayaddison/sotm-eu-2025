@@ -177,4 +177,14 @@
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy);
 
+  /**
+   * Static venue map click
+   */
+  let venueMap = document.querySelector(".venue-map-static");
+  if (venueMap) {
+    venueMap.addEventListener("click", function () {
+      window.location.href = "https://www.openstreetmap.org/way/26547289";
+    });
+  }
+
 })();
