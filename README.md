@@ -2,6 +2,14 @@
 
 Web code for the [State of the Map Europe 2025 website](https://osm-uk.github.io/sotm-eu-2025/) hosted on GitHub Pages
 
+## Tech
+
+Deliberately extremely low-tech. Git pull a copy locally and open www/index.html in a browser
+
+Based on a Bootstrap v5.3.7 template purchased from [BootstrapMade](https://bootstrapmade.com/theevent-conference-event-bootstrap-template/)
+
+Changes merged into the main branch are automatically deployed to GitHub Pages
+
 ## Previous editions
 
 - 2023 [Antwerp, Belgium](https://github.com/osmbe/sotm-eu-2023) website in Tailwind CSS + Next.js, tickets via [PreTix](https://pretix.eu/), schedule via own website
