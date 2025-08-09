@@ -63,6 +63,10 @@
     "endDate": "2025-09-15"
   }
   </script>
+
+    <!-- Pretix Ticketing -->
+    <link rel="stylesheet" type="text/css" href="https://pretix.eu/osmuk/sotmeu2025/widget/v2.css" crossorigin>
+    <script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async crossorigin></script>
 </head>
 
 <body class="index-page">
@@ -80,6 +84,7 @@
         <ul>
           <li><a href="#hero" class="active">Home<br></a></li>
           <li><a href="#schedule">Call for Sessions</a></li>
+            <li><a href="#tickets">Get Tickets</a></li>
           <li><a href="#venue">Venue</a></li>
           <li><a href="#travel">Travel</a></li>
           <li><a href="#hotels">Hotels</a></li>
@@ -501,6 +506,26 @@
       </div>
       -->
     </section> <!-- /Schedule Section -->
+
+      <!-- Venue Section -->
+      <section id="tickets" class="tickets section">
+
+          <div class="container section-title" data-aos="fade-up">
+              <h2>Tickets<br></h2>
+              <p>Tickets are now available for you to attend State of the Map Europe 2025.</p>
+          </div>
+          <div class="container-fluid" data-aos="fade-up">
+              <p>We have a limited number of early-bird tickets available at discounted prices. During the purchasing process you will have the option to buy a conference t-shirt, water bottle, or winter hat. The design of the items will be revealed in the future. </p>
+              <pretix-widget event="https://pretix.eu/osmuk/sotmeu2025/"></pretix-widget>
+              <noscript>
+                  <div class="pretix-widget">
+                      <div class="pretix-widget-info-message">
+                          JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/osmuk/sotmeu2025/">click here</a>.
+                      </div>
+                  </div>
+              </noscript>
+          </div>
+      </section>
 
     <!-- Venue Section -->
     <section id="venue" class="venue section">
