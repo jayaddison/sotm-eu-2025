@@ -1,9 +1,0 @@
-/* Follows guidance from: https://kevquirk.com/blog/how-to-self-host-your-web-fonts/ */
-@font-face {
-  font-family: 'Raleway';
-  src: url('../../assets/fonts/raleway/Raleway-Regular.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Roboto';
-  src: url('../../assets/fonts/roboto/Roboto-Regular.woff2') format('woff2');
-}
