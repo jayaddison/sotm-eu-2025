@@ -64,6 +64,17 @@
   </script>
 
     <!-- Pretalx Schedule -->
+    <script type="application/javascript">
+      var eventStart = new Date("2025-11-14T00:00:00");
+      var eventEnd = new Date("2025-11-15T23:59:59");
+      var currentDate = new Date();
+
+      // Suppress pretalx widget autoscroll-to-schedule except during the event
+      if (currentDate < eventStart || currentDate > eventEnd) {
+       // line credit: duckduckgo search assist, although the first source it referenced did not contain this
+       window.scroll = function() {};
+      }
+    </script>
     <script type="text/javascript" src="https://pretalx.com/sotmeu2025/widgets/schedule.js"></script>
 
     <!-- Pretix Ticketing -->
