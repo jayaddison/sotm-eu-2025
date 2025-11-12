@@ -63,23 +63,23 @@
   }
   </script>
 
-    <!-- Pretalx Schedule -->
-    <script type="application/javascript">
-      var eventStart = new Date("2025-11-14T00:00:00");
-      var eventEnd = new Date("2025-11-15T23:59:59");
-      var currentDate = new Date();
+  <!-- Pretalx Schedule -->
+  <script type="application/javascript">
+    var eventStart = new Date("2025-11-14T00:00:00");
+    var eventEnd = new Date("2025-11-15T23:59:59");
+    var currentDate = new Date();
 
-      // Suppress pretalx widget autoscroll-to-schedule except during the event
-      if (currentDate < eventStart || currentDate > eventEnd) {
-       // line credit: duckduckgo search assist, although the first source it referenced did not contain this
-       window.scroll = function() {};
-      }
-    </script>
-    <script type="text/javascript" src="https://pretalx.com/sotmeu2025/widgets/schedule.js"></script>
+    // Suppress pretalx widget autoscroll-to-schedule except during the event
+    if (currentDate < eventStart || currentDate > eventEnd) {
+      // line credit: duckduckgo search assist, although the first source it referenced did not contain this
+      window.scroll = function() {};
+    }
+  </script>
+  <script type="text/javascript" src="https://pretalx.com/sotmeu2025/widgets/schedule.js"></script>
 
-    <!-- Pretix Ticketing -->
-    <link rel="stylesheet" type="text/css" href="https://pretix.eu/osmuk/sotmeu2025/widget/v2.css" crossorigin>
-    <script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async crossorigin></script>
+  <!-- Pretix Ticketing -->
+  <link rel="stylesheet" type="text/css" href="https://pretix.eu/osmuk/sotmeu2025/widget/v2.css" crossorigin>
+  <script type="text/javascript" src="https://pretix.eu/widget/v2.en.js" async crossorigin></script>
 </head>
 
 <body class="index-page">
@@ -97,7 +97,6 @@
         <ul>
           <li><a href="#hero" class="active">Home<br></a></li>
           <li><a href="#schedule">Schedule</a></li>
-            <li><a href="#tickets">Get Tickets</a></li>
           <li><a href="#venue">Venue</a></li>
           <li><a href="#travel">Travel</a></li>
           <li><a href="#hotels">Hotels</a></li>
@@ -108,9 +107,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <!--
-      <a class="cta-btn d-none d-sm-block" href="#buy-tickets">Ticket Info</a>
-      -->
+      <a class="cta-btn d-none d-sm-block" href="#tickets">Get Tickets</a>
 
     </div>
   </header>
@@ -134,41 +131,52 @@
 
         <div class="container position-relative" data-aos="fade-up">
           <div class="row">
-              <div class="col-12 col-lg-6">
-                <div class="p-3">
-                  <h2>About The Event</h2>
-                  <p>Join us in Scotland's cultural centre for the most epic of European Open Data geo conferences.
-                    All the OpenStreetMap-related talks, activities, discussion groups, and workshops you can handle. </p>
-                  <p>Dundee is described as giving you "jute, jam, and journalism" but nowadays has a thriving videogames industry.
-                    Visit the Royal Research Ship Discovery which took Captain Scott on his first voyage to the Antarctic, or the V&amp;A Design Museum.
-                    Accommodation is good value, so stay for a few days either side and make a trip of it!
-                  </p>
+            <div class="col-12 col-lg-6">
+              <div class="p-3">
+                <h2>About The Event</h2>
+                <p>
+                  Join us in Scotland's cultural centre for the most epic of European Open Data geo conferences.
+                  All the OpenStreetMap-related talks, activities, discussion groups, and workshops you can handle.
+                </p>
+                <p>
+                  Dundee is described as giving you "jute, jam, and journalism" but nowadays has a thriving videogames industry.
+                  Visit the Royal Research Ship Discovery which took Captain Scott on his first voyage to the Antarctic, or the V&amp;A Design Museum.
+                  Accommodation is good value, so stay for a few days either side and make a trip of it!
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="row row-cols-1 row-cols-lg-2 g-3">
+                <div class="col">
+                  <div class="p-3">
+                    <h3>Where</h3>
+                    <p>
+                      Abertay University, Dundee, Scotland, UK
+                      <br>Open map on <a href="https://www.openstreetmap.org/node/13098667650#map=19/56.463037/-2.973671">OSM.org</a> or using <a href="geo:56.463013,-2.974125(Kydd+Building,Abertay+University">an app</a>.
+                    </p>
+                    <p>An <a href="https://umap.openstreetmap.fr/en/map/dundee-sotm-eu_1280155" target="_blank">interactive uMap of Dundee</a> is available showing the venue & other key locations.</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-3">
+                    <h3>When</h3>
+                    <p>Friday and Saturday<br>14-15 November 2025</p>
+                    <p>Saturday evening social included in all conference tickets.</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-3">
+                    <h3>Fringe Events</h3>
+                    <p>See the <a href="https://wiki.openstreetmap.org/wiki/State_of_the_Map_Europe_2025">OSM Wiki</a> for related OSM events in Dundee.</p>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="p-3">
+                    <h3>Newsletter </h3>
+                    <p>Sign up to the <a href="#contact">newsletter</a> for updates.</p>
+                  </div>
                 </div>
               </div>
-
-              <div class="col-12 col-lg-6">
-                  <div class="row row-cols-1 row-cols-lg-2 g-3">
-                      <div class="col"><div class="p-3">
-                          <h3>Where</h3>
-                          <p>Abertay University, Dundee, Scotland, UK
-                            <br>Open map on <a href="https://www.openstreetmap.org/node/13098667650#map=19/56.463037/-2.973671">OSM.org</a> or using <a href="geo:56.463013,-2.974125(Kydd+Building,Abertay+University">an app</a>.
-                          </p>
-                          <p>An <a href="https://umap.openstreetmap.fr/en/map/dundee-sotm-eu_1280155" target="_blank">interactive uMap of Dundee</a> is available showing the venue & other key locations.</p>
-                      </div></div>
-                      <div class="col"><div class="p-3">
-                          <h3>When</h3>
-                          <p>Friday and Saturday<br>14-15 November 2025</p>
-                          <p>Saturday evening social included in all conference tickets</p>
-                      </div></div>
-                      <div class="col"><div class="p-3">
-                          <h3>Fringe Events</h3>
-                          <p>See the <a href="https://wiki.openstreetmap.org/wiki/State_of_the_Map_Europe_2025">OSM Wiki</a> for related OSM events in Dundee.</p>
-                      </div></div>
-                      <div class="col"><div class="p-3">
-                          <h3>Newsletter </h3>
-                          <p>Sign up to the <a href="#contact">newsletter</a> to receive updates.</p>
-                      </div></div>
-                  </div>
             </div>
           </div>
         </div>
@@ -177,28 +185,134 @@
     </section><!-- /Hero Section -->
 
     <!-- Schedule Section -->
-    <section id="schedule" class="faq section">
+    <section id="schedule" class="schedule section">
 
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Schedule<br></h2>
-          <p>The conference begins on Friday 14th November 9am with tea/coffee served at registration in the Kydd Building. We are hoping to host an evening dinner on Saturday 15th November to end the conference (details to be confirmed).</p>
+      <div class="container section-title aos-init aos-animate" data-aos="fade-up">
+        <h2>Schedule</h2>
       </div>
-        <div class="container-fluid" data-aos="fade-up">
-            <p>Below are confirmed sessions (talks, panels, and discussion groups) are displayed below, but times of these may change. Click the titles for more session & speaker information. Our rooms for the conference are being named "Area", "Way", and "Node" after object types in OpenStreetMap data.
-                <br>Some unofficial 'fringe' activities are being arranged on the day after, for those still in Dundee, see the <a href="https://wiki.openstreetmap.org/wiki/State_of_the_Map_Europe_2025" target="_blank">OSM Wiki</a>.</p>
-        </div>
+      <!-- End Section Title -->
 
-        <div class="container-fluid" data-aos="fade-up">
-            <pretalx-schedule event-url="https://pretalx.com/sotmeu2025/" locale="en" format="grid" style="--pretalx-clr-primary: #1c0056"></pretalx-schedule>
-            <noscript>
-                <div class="pretalx-widget">
-                    <div class="pretalx-widget-info-message">
-                        JavaScript is disabled in your browser. To access our schedule without JavaScript,
-                        please <a target="_blank" href="https://pretalx.com/sotmeu2025/schedule/">click here</a>.
-                    </div>
-                </div>
-            </noscript>
+      <div class="container" id="high-level-schedule" data-aos="fade-up">
+        <div class="tab-content row justify-content-center aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+          <div role="tabpanel" class="col-lg-9 tab-pane fade active show" id="day-1">
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Thursday<br/>09:45 - 13:00</time></div>
+              <div class="col-md-10">
+                <h4>Mapping nature walk (Fringe event)</h4>
+                <p>
+                  A 6-8 km walk at a gentle pace around some natural areas near Dundee with SK53 and others.
+                  See <a href="https://osmcal.org/event/4199/" target="_blank">Pre-SotM-EU Mapping Nature Walk</a> for details and signup.
+                </p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Thursday<br/>17:00 - 18:00</time></div>
+              <div class="col-md-10">
+                <h4>Early registration</h4>
+                <p>
+                  Here already? Come on down to the Kydd Building of Abertay University and get your badge!
+                  Avoid the Saturday crush and have a chat.
+                </p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Friday<br/>08:30 - 09:30</time></div>
+              <div class="col-md-10">
+                <h4>Registration</h4>
+                <p>Register in the Kydd Building of Abertay University, tea/coffee served.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Friday 09:45</time></div>
+              <div class="col-md-10">
+                <h4>Conference day 1 starts</h4>
+                <p>Be in your seats for the conference to begin.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Friday<br/>09:30 onwards</time></div>
+              <div class="col-md-10">
+                <h4>Late registration</h4>
+                <p>Got here after the conference has started? No worries. Follow our signs in the Old College Building to the "Info Desk" to get your name badge before joining any sessions.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Friday 18:30</time></div>
+              <div class="col-md-10">
+                <h4>Conference day 1 ends</h4>
+                <p>
+                  The official talking is done for the day and you are free to explore the glittering lights of Dundee.
+                  Remember, it is a conference, so go 'confer' with people you don't know yet. Invite people to join you.
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Saturday 09:30</time></div>
+              <div class="col-md-10">
+                <h4>Conference day 2 starts</h4>
+                <p>Be in your seats for the conference to begin.</p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Saturday 13:15</time></div>
+              <div class="col-md-10">
+                <h4>Group photo</h4>
+                <p>
+                  Every conference we take a group photo.
+                </p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Saturday 18:00</time></div>
+              <div class="col-md-10">
+                <h4>Social event at The Verdant Works</h4>
+                <p>
+                  The talks have finished so let's all go to the Verdant Works for a meal and drinks.
+                  Full museum access is included in all tickets. 
+                  Walking from Abertay University takes 10 minutes.
+                </p>
+              </div>
+            </div>
+
+            <div class="row schedule-item">
+              <div class="col-md-2"><time>Sunday<br/>10:00 - 17:00</time></div>
+              <div class="col-md-10">
+                <h4>Makers Gonna Make Dundee x State of the Map Europe Edition (Fringe Event)</h4>
+                <p>
+                  Buildathon at Flour Mill Dundee.
+                  <a href="https://luma.com/te0dzt53" target="_blank">Signup here</a>.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+
+      <div class="container-fluid" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="sub-heading">The detailed schedule from PreTalx</h3>
+        <p>
+          Below are confirmed sessions (talks, panels, and discussion groups) are displayed below, but times of these may change. 
+          Click the titles for more session and speaker information. 
+          Rooms for the conference are named "Area", "Way", and "Node" after object types in OpenStreetMap data.
+        </p>
+        <pretalx-schedule event-url="https://pretalx.com/sotmeu2025/" locale="en" format="grid" style="--pretalx-clr-primary: #1c0056"></pretalx-schedule>
+        <noscript>
+          <div class="pretalx-widget">
+            <div class="pretalx-widget-info-message">
+              JavaScript is disabled in your browser. To access our schedule without JavaScript,
+              please <a target="_blank" href="https://pretalx.com/sotmeu2025/schedule/">click here</a>.
+            </div>
+          </div>
+        </noscript>
+      </div>
 
         <!-- Schedule FAQ
 <div class="container">
@@ -307,24 +421,24 @@
 
     </section> <!-- /Schedule Section -->
 
-      <!-- Tickets Section -->
-      <section id="tickets" class="tickets section">
+    <!-- Tickets Section -->
+    <section id="tickets" class="tickets section">
 
-          <div class="container section-title" data-aos="fade-up">
-              <h2>Tickets<br></h2>
-              <p>A limited number of tickets may still be available below, otherwise an option to join a waiting list will appear.</p>
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Tickets</h2>
+        <p>A limited number of tickets may still be available below, otherwise an option to join a waiting list will appear.</p>
+      </div>
+      <div class="container-fluid" data-aos="fade-up">
+        <pretix-widget event="https://pretix.eu/osmuk/sotmeu2025/"></pretix-widget>
+        <noscript>
+          <div class="pretix-widget">
+            <div class="pretix-widget-info-message">
+              JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/osmuk/sotmeu2025/">click here</a>.
+            </div>
           </div>
-          <div class="container-fluid" data-aos="fade-up">
-              <pretix-widget event="https://pretix.eu/osmuk/sotmeu2025/"></pretix-widget>
-              <noscript>
-                  <div class="pretix-widget">
-                      <div class="pretix-widget-info-message">
-                          JavaScript is disabled in your browser. To access our ticket shop without JavaScript, please <a target="_blank" rel="noopener" href="https://pretix.eu/osmuk/sotmeu2025/">click here</a>.
-                      </div>
-                  </div>
-              </noscript>
-          </div>
-      </section> <!-- /Tickets Section -->
+        </noscript>
+      </div>
+    </section> <!-- /Tickets Section -->
 
     <!-- Venue Section -->
     <section id="venue" class="venue section">
